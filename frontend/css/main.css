@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(29, 29, 29);
+    font-family: sans-serif;
+    color: white;
+}
+
+#messages {
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    height: 50vh;
+    width: 60vw;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+textarea {
+    background-color: rgb(3, 3, 3);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.msg {
+    font-size: 1em;
+    margin: 5px;
+}
+
+.name {
+    color:rgb(197, 197, 197);
+    font-size: 0.8em;
+}
