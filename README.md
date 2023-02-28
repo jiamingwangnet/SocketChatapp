@@ -30,4 +30,17 @@ The webserver will be started on the specified IP address and port.
 
 ## Message format
 
-The message format is `[name]:[message]`.
+**From server:**
+
+```js
+{messages:[/*messages*/]}
+```
+
+**To server:**
+```js
+{
+  msg: "name:message"
+}
+```
+
+The message format is `[name]:[message]` when stored in the `data.txt` file.
