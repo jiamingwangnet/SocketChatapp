@@ -8,11 +8,27 @@
 static constexpr const char* SEND_API_PATH = "/api/sendmessage";
 static constexpr const char* GET_API_PATH = "/api/getmessage";
 
-static constexpr const char* port = "8080";
-static constexpr const char* addr = "192.168.1.17";
-
-int main()
+// address, port
+int main(int argc, char **argv)
 {
+	const char* addr = argv[1];
+	const char* port = argv[2];
+
+	std::string saddr;
+	std::string sport;
+
+	if (argc != 3)
+	{
+		std::cout << "Address: ";
+		std::cin >> saddr;
+
+		std::cout << "Port: ";
+		std::cin >> sport;
+
+		addr = saddr.c_str();
+		port = sport.c_str();
+	}
+
 	HttpServer server{
 		[](Request& req, HttpServer& res) {
 			std::cout << Request::stringifyMethod(req.getMethod()) << ' ' << req.getPath() << '\n';
