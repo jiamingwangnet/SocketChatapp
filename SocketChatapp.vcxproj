@@ -131,6 +131,7 @@
   <ItemGroup>
     <ClInclude Include="include\Files.h" />
     <ClInclude Include="include\HttpServer.h" />
+    <ClInclude Include="include\MessageManager.h" />
     <ClInclude Include="include\ReqRes.h" />
   </ItemGroup>
   <ItemGroup>
